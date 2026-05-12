@@ -20,7 +20,7 @@
 
 
       <div class="mt-12 pt-8 border-t border-outline-variant/30">
-        <h3 class="font-label-sm text-label-sm mb-4 uppercase tracking-widest text-secondary">Summary</h3>
+        <h3 class="font-label-sm  mb-4 uppercase tracking-widest text-secondary">Summary</h3>
         <div class="flex justify-between font-body-md py-2">
           <span>Photos Selected</span>
           <span>12</span>

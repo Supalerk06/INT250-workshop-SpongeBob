@@ -49,7 +49,7 @@ onMounted(() => {
         
         <router-link 
           to="/booking" 
-          class="bg-primary text-on-primary px-4 py-2 text-label-sm font-bold"
+          class="bg-primary text-on-primary px-4 py-2  font-bold"
         >
           BOOK NOW
         </router-link>
@@ -61,7 +61,7 @@ onMounted(() => {
 <style scoped>
 @reference "../style.css";
 .nav-link {
-  @apply text-label-sm text-secondary hover:text-primary;
+  @apply  text-secondary hover:text-primary;
 }
 
 .nav-link-active {

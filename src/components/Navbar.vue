@@ -24,13 +24,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-container/90 backdrop-blur-md border-b border-outline-variant/30 transition-colors duration-300">
-    <nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-      <router-link to="/" class="text-xl md:text-headline-md font-bold tracking-tighter text-primary">
+  <header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant">
+    <nav class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <router-link to="/" class="text-xl font-bold text-primary">
         Fotof
       </router-link>
       
-      <div class="hidden md:flex gap-gutter items-center">
+      <div class="hidden md:flex gap-6 items-center">
         <router-link to="/" class="nav-link" active-class="nav-link-active">Home</router-link>
         <router-link to="/booking" class="nav-link" active-class="nav-link-active">Booking</router-link>
         <router-link to="/gallery" class="nav-link" active-class="nav-link-active">Gallery</router-link>
@@ -40,7 +40,7 @@ onMounted(() => {
       <div class="flex items-center gap-4">
         <button 
           @click="toggleDarkMode" 
-          class="p-2 rounded-full hover:bg-surface-container transition-colors"
+          class="p-2 rounded hover:bg-surface-container"
           aria-label="Toggle dark mode"
         >
           <span v-if="isDark" class="material-symbols-outlined">light_mode</span>
@@ -49,7 +49,7 @@ onMounted(() => {
         
         <router-link 
           to="/booking" 
-          class="bg-primary text-on-primary px-4 md:px-6 py-2 md:py-3 text-label-sm hover:opacity-90 active:scale-95 transition-all"
+          class="bg-primary text-on-primary px-4 py-2 text-label-sm font-bold"
         >
           BOOK NOW
         </router-link>
@@ -61,15 +61,11 @@ onMounted(() => {
 <style scoped>
 @reference "../style.css";
 .nav-link {
-  @apply text-label-sm text-secondary hover:text-primary transition-colors duration-150 relative;
+  @apply text-label-sm text-secondary hover:text-primary;
 }
 
 .nav-link-active {
-  @apply text-primary;
-}
-
-.nav-link-active::after {
-  content: '';
-  @apply absolute -bottom-1 left-0 w-full h-px bg-primary;
+  @apply text-primary font-bold;
 }
 </style>
+

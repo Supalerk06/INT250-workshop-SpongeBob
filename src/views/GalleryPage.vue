@@ -16,26 +16,26 @@ const photos = [
 </script>
 
 <template>
-  <div class="bg-background text-on-background font-body-md">
+  <div class="bg-surface text-on-surface">
     
     <AlertBanner message="Gallery expires in 30 days" />
 
-    <main class="max-w-container-max mx-auto px-margin-desktop py-16">
-      <header class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
-        <div class="max-w-2xl">
-          <h1 class="font-display text-[48px] font-light leading-tight mb-4">Portrait Session: The Glass House</h1>
-          <p class="font-body-lg text-lg text-secondary">Curated selection from your architectural editorial session. Select your preferred high-resolution digital files or request specific print finishes.</p>
+    <main class="max-w-container-max mx-auto px-4 py-12">
+      <header class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h1 class="text-2xl font-bold mb-2">Gallery: The Glass House</h1>
+          <p class="text-secondary">Curated selection from your session. Select files or request adjustments.</p>
         </div>
-        <div class="flex items-center gap-4">
-          <button class="flex items-center gap-2 font-label-sm text-sm text-primary border border-primary/10 px-4 py-2 hover:bg-surface-container transition-colors">
-            <span class="material-symbols-outlined text-[20px]">download</span> DOWNLOAD ALL
+        <div>
+          <button class="bg-surface-container border border-outline px-4 py-2 text-sm font-bold">
+            Download All
           </button>
         </div>
       </header>
 
-      <div class="flex flex-col lg:flex-row gap-16">
+      <div class="flex flex-col lg:flex-row gap-8">
         <div class="flex-grow">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             <PhotoCard 
               v-for="(photo, index) in photos" 
               :key="index"
@@ -49,6 +49,6 @@ const photos = [
         <RequestSidebar />
       </div>
     </main>
-
-</div>
+  </div>
 </template>
+

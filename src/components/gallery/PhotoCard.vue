@@ -11,20 +11,17 @@ defineProps({
 </script>
 
 <template>
-  <div class="group relative aspect-[4/5] bg-surface-container-high overflow-hidden border border-outline-variant/10">
-    <img :src="imageSrc" :alt="altText" class="w-full h-full object-cover grayscale" />
+  <div class="relative aspect-square bg-surface-container border border-outline">
+    <img :src="imageSrc" :alt="altText" class="w-full h-full object-cover" />
     
-    <div class="image-hover-overlay absolute inset-0 bg-primary/40 backdrop-blur-[2px] flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out">
-      <button class="w-12 h-12 bg-white flex items-center justify-center hover:bg-black hover:text-white transition-colors" title="Print Selection">
-        <span class="material-symbols-outlined">print</span>
-      </button>
-      <button class="w-12 h-12 bg-white flex items-center justify-center hover:bg-black hover:text-white transition-colors" title="Digital Resolution">
-        <span class="material-symbols-outlined">high_res</span>
-      </button>
+    <div v-if="isSelected" class="absolute top-2 left-2">
+      <span class="bg-primary text-on-primary px-2 py-1 text-[10px] font-bold">SELECTED</span>
     </div>
-
-    <div v-if="isSelected" class="absolute top-4 left-4">
-      <span class="bg-white text-black px-3 py-1 font-label-sm text-[10px] tracking-widest">SELECTED</span>
+    
+    <div class="p-2 flex gap-2">
+      <button class="text-xs underline" title="Print">Print</button>
+      <button class="text-xs underline" title="Download">Download</button>
     </div>
   </div>
 </template>
+

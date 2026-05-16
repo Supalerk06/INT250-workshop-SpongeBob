@@ -8,11 +8,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="mt-16 bg-surface-container border-b border-outline py-2">
+  <div class="mt-20 bg-surface-container-lowest border-b border-outline-variant/20 py-3">
     <div class="max-w-container-max mx-auto px-margin-desktop flex items-center justify-center gap-2">
-      <span class="text-sm font-bold">{{ message }}</span>
+      <span class="material-symbols-outlined text-[18px] text-error">alarm</span>
+      <span class="font-label-sm text-label-sm text-on-surface uppercase tracking-[0.2em]">{{ message }}</span>
     </div>
   </div>
 </template>
-
 

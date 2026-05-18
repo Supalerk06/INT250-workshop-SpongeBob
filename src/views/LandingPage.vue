@@ -42,7 +42,7 @@ const setObservedElement = (el) => {
           Capturing the interplay of light, form, and space. We provide a minimalist lens to frame the world's most sophisticated designs and moments.
         </p>
         <div>
-          <button class="bg-primary text-on-primary px-10 py-5 text-label-sm tracking-widest font-semibold uppercase hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/10">
+          <button class="bg-primary text-on-primary px-10 py-5 cursor-pointer text-label-sm tracking-widest font-semibold uppercase hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/10">
             Book a Session
           </button>
         </div>

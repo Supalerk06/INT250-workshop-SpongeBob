@@ -32,15 +32,17 @@ onMounted(() => {
       
       <div class="hidden md:flex gap-6 items-center">
         <router-link to="/" class="nav-link" active-class="nav-link-active">Home</router-link>
+        <router-link to="/about" class="nav-link" active-class="nav-link-active">About</router-link>
         <router-link to="/booking" class="nav-link" active-class="nav-link-active">Booking</router-link>
         <router-link to="/gallery" class="nav-link" active-class="nav-link-active">Gallery</router-link>
         <router-link to="/invoice" class="nav-link" active-class="nav-link-active">Invoice</router-link>
+        <router-link to="/news" class="nav-link" active-class="nav-link-active">News</router-link>
       </div>
 
       <div class="flex items-center gap-4">
         <button 
           @click="toggleDarkMode" 
-          class="p-2 rounded hover:bg-surface-container"
+          class="p-2 rounded hover:bg-surface-container cursor-pointer"
           aria-label="Toggle dark mode"
         >
           <span v-if="isDark" class="material-symbols-outlined">light_mode</span>

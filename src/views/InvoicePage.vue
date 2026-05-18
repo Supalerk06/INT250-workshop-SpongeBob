@@ -1,5 +1,9 @@
- <script setup>
+<script setup>
+import { ref, computed } from 'vue'
 
+const deliveryMethod = ref('pickup')
+const deliveryFee = computed(() => deliveryMethod.value === 'postal' ? 25.00 : 0.00)
+const totalAmount = computed(() => 720.00 + 57.60 + deliveryFee.value)
 </script>
 
 <template>
@@ -99,14 +103,14 @@
             </div>
             <div class="flex justify-between font-body-md">
               <span class="text-secondary">Delivery</span>
-              <span>$0.00</span>
+              <span>${{ deliveryFee.toFixed(2) }}</span>
             </div>
           </div>
 
           <div class="border-t border-outline-variant pt-6 mb-10">
             <div class="flex justify-between items-baseline">
               <span class="font-label-sm text-label-sm uppercase tracking-widest">Total Amount</span>
-              <span class="font-headline-lg text-headline-lg">$777.60</span>
+              <span class="font-headline-lg text-headline-lg">${{ totalAmount.toFixed(2) }}</span>
             </div>
           </div>
 

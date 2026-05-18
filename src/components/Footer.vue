@@ -15,8 +15,11 @@
           <span class="text-sm font-bold text-primary">Navigation</span>
           <ul class="flex flex-col gap-2">
             <li><router-link to="/" class="footer-link">Home</router-link></li>
-            <li><router-link to="/gallery" class="footer-link">Gallery</router-link></li>
+            <li><router-link to="/about" class="footer-link">About</router-link></li>
             <li><router-link to="/booking" class="footer-link">Booking</router-link></li>
+            <li><router-link to="/gallery" class="footer-link">Gallery</router-link></li>
+            <li><router-link to="/invoice" class="footer-link">Invoice</router-link></li>
+            <li><router-link to="/news" class="footer-link">News</router-link></li>
           </ul>
         </div>
         <div class="flex flex-col gap-4">

@@ -99,7 +99,7 @@ npm run preview
 
 | Student ID | Full Name | Responsible |
 | :--- | :--- | :--- |
-| `6713050006` | Natthasith Boonheng | InvoicePage and Report|
+| `67130500006` | Natthasith Boonheng | InvoicePage and Report|
 | `67130500028` | Phakaphol Dherachaisuphakij | Darkmode , BookingPage and NewsPage |
 | `67130500074` | Thitirat Srithomya | Component Design and GalleryPage |
 | `67130500117` | Supalerk Kamolnetr| README , LandingPage and AboutPage |
